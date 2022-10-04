@@ -25,7 +25,7 @@ coordinaten = []
 #     print(type(x))
 #     print(x)
 
-coordinaten = [(0, 0), (150, 0), (300, 0)]
+coordinaten = [(0, 0), (150, 0), (300, 0), (300, -200), (150, -200), (0, -200)]
 
 for n in range(len(coordinaten)):
     turtle.penup()
@@ -33,8 +33,10 @@ for n in range(len(coordinaten)):
     turtle.pendown()
     teken_huis(100,100)
 
-
-
+# turtle.penup()   
+# turtle.setposition(-450, 0)
+# turtle.pendown()
+# teken_huis(200, 200)
 
 
 

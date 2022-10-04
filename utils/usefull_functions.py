@@ -25,7 +25,10 @@ def teken_driehoek(lengte):
 # Teken huis
 def teken_huis(lengte_vierkant, lengte_driehoek):
     teken_vierkant(lengte_vierkant)
-    turtle.sety(lengte_vierkant)
+    turtle.setheading(90)
+    turtle.forward(lengte_vierkant)
+    turtle.setheading(0)
+    # turtle.sety(lengte_vierkant)
     teken_driehoek(lengte_driehoek)
 
 # Teken veelhoek 
