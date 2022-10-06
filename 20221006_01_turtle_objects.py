@@ -1,5 +1,6 @@
 import turtle as turtle
 from utils.usefull_functions import teken_huis
+from utils.usefull_classes import Point
 
 # object
 class Huis:
@@ -15,12 +16,15 @@ class Huis:
     
     '''
     
+    
+    
     def __init__(self):
         # self.lengte = 0
         # self.lengte = lengte
         self.lengte = int()
         self.naam = ""
-    
+        startpunt = Point()
+        
     def __str__(self):
         return f"Huis met lengte {self.lengte}"
     
@@ -35,6 +39,9 @@ class Huis:
     
     def set_naam(self, naam):
         self.naam
+    
+    def set_startpunt(self, startpunt):
+        self.startpunt = startpunt
     
 
 # print(Huis)
@@ -59,5 +66,8 @@ print(buur)
 
 thuis.teken()
 buur.teken()
+
+
+thuis.startpunt(0.0, 10.0)
 
 turtle.done()
