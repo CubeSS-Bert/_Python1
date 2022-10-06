@@ -5,12 +5,21 @@ from utils.usefull_functions import teken_huis
 class Huis:
     '''
     Dit is een huis in turtle
+    * attributes:
+        - lengte
+        - naam
+    * Methods:
+        - set_lengte
+        - get_lengte
+        - teken?? is dit wel een method??    
+    
     '''
     
     def __init__(self):
         # self.lengte = 0
         # self.lengte = lengte
         self.lengte = int()
+        self.naam = ""
     
     def __str__(self):
         return f"Huis met lengte {self.lengte}"
@@ -24,7 +33,8 @@ class Huis:
     def teken(self):
         teken_huis(self.lengte, self.lengte)
     
-    
+    def set_naam(self, naam):
+        self.naam
     
 
 # print(Huis)
