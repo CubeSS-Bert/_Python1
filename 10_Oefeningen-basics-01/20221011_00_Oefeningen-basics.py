@@ -71,14 +71,29 @@
 #         print(n)
 
 # ************************************************ 01.10
-numbers = (range(10))
-reeks = list(input("Geef een reeks van cijfers en tekens."))
-aantal_tekens = len(reeks)
-print(aantal_tekens)
+reeks = input("Geef een string van cijfers en letters.")
+counter_cijfers = 0
+counter_letters = 0
+# aantal_tekens = len(reeks)
+print(len(reeks))
 
-for n in range(aantal_tekens):
-    for m in range(numbers):
-        if reeks[n] == str(numbers[m]):
-            print(reeks[n])
+for m in reeks:
+    # print(m)
+    for n in range(10):
+        try:
+            int(m)
+            # print(m)
+            counter_cijfers += 1
+            break
+        except:
+            counter_letters += 1
+            break
+            pass
+
+print(counter_cijfers)
+print(counter_letters)
+
+# ************************************************ 01.11
 
 
+     
