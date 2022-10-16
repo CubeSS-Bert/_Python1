@@ -28,25 +28,25 @@ class Point:
         self.posx, self.posy = self.posy, self.posx
         
 
-class Dobbelsteen:
-    '''
-    Class 'Point'
-    * attributes:
-        - kleur
-        - 
-    * Methods:
-        - gooien
-    '''
+# class Dobbelsteen:
+#     '''
+#     Class 'Point'
+#     * attributes:
+#         - kleur
+#         - 
+#     * Methods:
+#         - gooien
+#     '''
     
-    def __init__(self, kleur="Red"):
-        kleur = str()
+#     def __init__(self, kleur="Red"):
+#         kleur = str()
         
-    def __str__(self):
-        return f"Dobbelsteen met kleur {self.kleur}.="
+#     def __str__(self):
+#         return f"Dobbelsteen met kleur {self.kleur}."
     
-    def gooien(self):
-        self.resultaat = random.randint(1,6)
-        return self.resultaat
+#     def gooien(self):
+#         self.resultaat = random.randint(1,6)
+#         return self.resultaat
   
   
   

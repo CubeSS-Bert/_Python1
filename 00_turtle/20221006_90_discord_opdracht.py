@@ -87,13 +87,13 @@
 #     print(som, n)
 
 # ********************************************************* Discord - Opdracht(9)
-maximum_aantal_getallen = int(input("Geef maximum aantal getallen die opgeteld dienen te worden: "))
-som = int(0)
+# maximum_aantal_getallen = int(input("Geef maximum aantal getallen die opgeteld dienen te worden: "))
+# som = int(0)
 
-for n in range(maximum_aantal_getallen):
-    getal = int(input(f"Geef getal {n+1}/{maximum_aantal_getallen}: "))
-    som += getal
+# for n in range(maximum_aantal_getallen):
+#     getal = int(input(f"Geef getal {n+1}/{maximum_aantal_getallen}: "))
+#     som += getal
 
-print(som)
+# print(som)
 
 
