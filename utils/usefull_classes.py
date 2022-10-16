@@ -1,5 +1,4 @@
-
-
+import random as random
 
 class Point:
     '''
@@ -28,7 +27,26 @@ class Point:
     def invert_xy(self):
         self.posx, self.posy = self.posy, self.posx
         
+
+class Dobbelsteen:
+    '''
+    Class 'Point'
+    * attributes:
+        - kleur
+        - 
+    * Methods:
+        - gooien
+    '''
+    
+    def __init__(self, kleur="Red"):
+        kleur = str()
         
+    def __str__(self):
+        return f"Dobbelsteen met kleur {self.kleur}.="
+    
+    def gooien(self):
+        self.resultaat = random.randint(1,6)
+        return self.resultaat
   
   
   

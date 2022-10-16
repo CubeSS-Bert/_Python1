@@ -70,30 +70,94 @@
 #     if (n%9)==0:
 #         print(n)
 
-# ************************************************ 01.10
-reeks = input("Geef een string van cijfers en letters.")
-counter_cijfers = 0
-counter_letters = 0
-# aantal_tekens = len(reeks)
-print(len(reeks))
+# ************************************************ 01.10 - verkeerde interpretatie
+# reeks = input("Geef een string van cijfers en letters.")
+# counter_cijfers = 0
+# counter_letters = 0
+# # aantal_tekens = len(reeks)
+# print(len(reeks))
 
-for m in reeks:
-    # print(m)
-    for n in range(10):
-        try:
-            int(m)
-            # print(m)
-            counter_cijfers += 1
-            break
-        except:
-            counter_letters += 1
-            break
-            pass
+# for m in reeks:
+#     # print(m)
+#     for n in range(10):
+#         try:
+#             int(m)
+#             # print(m)
+#             counter_cijfers += 1
+#             break
+#         except:
+#             counter_letters += 1
+#             break
+#             pass
 
-print(counter_cijfers)
-print(counter_letters)
+# print(counter_cijfers)
+# print(counter_letters)
 
+# ************************************************ 01.10 - 'juiste' interpretatie
+# reeks = input("Geef een string om te analyseren: ")
+# reeks_unieke_letters = []
+# counter_hoeveel_komt_letter_voort = 0
+
+# for m in reeks[::]:
+#     if m not in reeks_unieke_letters:
+#         reeks_unieke_letters.append(m)
+# print(reeks_unieke_letters)
+
+# for m in reeks_unieke_letters[::]:
+#     counter_hoeveel_komt_letter_voort = 0
+#     for n in reeks[::]:
+#         if n == m:
+#             counter_hoeveel_komt_letter_voort += 1
+#     print(m,' = ',counter_hoeveel_komt_letter_voort)
+   
 # ************************************************ 01.11
+# aantal_limonades = float(input("Geef het aantal limonades dat u wil aanschaffen: "))
+# prijs_limonade = 3.0
+# totale_prijs_limonades = 0.0
+# PERCENTAGE_KORTING = 0.05
+# PERCENTAGE_DREMPEL = 10.0
 
+# totale_prijs_limonades = (aantal_limonades * prijs_limonade)
+# if aantal_limonades >= PERCENTAGE_DREMPEL:
+#     totale_prijs_limonades = totale_prijs_limonades * (1 - PERCENTAGE_KORTING)
 
+# print(totale_prijs_limonades)
      
+# ************************************************ 01.12
+# aantal_limonades = 0
+# prijs_limonade = 3.0
+# totale_prijs_limonades = 0.0
+
+# while aantal_limonades <= 0:
+#     aantal_limonades = int(input("Geef het aantal limonades dat u wil aanschaffen: "))
+
+# totale_prijs_limonades = prijs_limonade * aantal_limonades
+# print(f"Beste klant, voor {aantal_limonades} limonades is het in totaal {totale_prijs_limonades} €")
+
+# ************************************************ 01.13
+# getal = int(input("Geef een willekeurig geheel getal: "))
+
+# for n in range(11):
+#     print(n, 'x', getal, '= ', n*getal)
+    
+# ************************************************ 01.14
+# antwoord_werk = input("Heeft u werk momenteel? ")
+
+# if antwoord_werk == "ja":
+#     print("Veel werkplezier")
+# else:
+#     antwoord_opleiding = input("Heeft u soms interesse in een opleiding? ")
+#     if antwoord_opleiding == "ja":
+#         print("Je vindt opleidingen op www.syntra-ab.be")
+#     else:
+#         print("Je vindt vacatures op www.vdab.be/jobs")
+
+# ************************************************ 01.15
+from utils.usefull_classes import Dobbelsteen
+
+dobbelsteen_1 = Dobbelsteen()
+for n in range(4):
+    print(dobbelsteen_1.gooien)
+
+
+
