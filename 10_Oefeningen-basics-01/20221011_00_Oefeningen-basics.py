@@ -154,31 +154,31 @@
 
 # ************************************************ 01.15
 # from utils.usefull_classes import Dobbelsteen
-import random as random
+# import random as random
 
-class Dobbelsteen:
-    '''
-    Class 'Point'
-    * attributes:
-        - kleur
-        - 
-    * Methods:
-        - gooien
-    '''
+# class Dobbelsteen:
+#     '''
+#     Class 'Point'
+#     * attributes:
+#         - kleur
+#         - 
+#     * Methods:
+#         - gooien
+#     '''
     
-    def __init__(self, kleur="Red"):
-        kleur = str()
+#     def __init__(self, kleur="Red"):
+#         kleur = str()
         
-    def __str__(self):
-        return f"Dobbelsteen met kleur {self.kleur}."
+#     def __str__(self):
+#         return f"Dobbelsteen met kleur {self.kleur}."
     
-    def __gooien__(self, resultaat=6):
-        self.resultaat = random.randint(1,6)
-        # self.resultaat = 6
-        return self.resultaat
+#     def __gooien__(self, resultaat=6):
+#         self.resultaat = random.randint(1,6)
+#         # self.resultaat = 6
+#         return self.resultaat
 
-dobbelsteen_1 = Dobbelsteen()
+# dobbelsteen_1 = Dobbelsteen()
 
-print(dobbelsteen_1.kleur)
-for n in range(4):
-    print(dobbelsteen_1.__gooien__())
+# # print(dobbelsteen_1.kleur)
+# for n in range(4):
+#     print(dobbelsteen_1.__gooien__())
