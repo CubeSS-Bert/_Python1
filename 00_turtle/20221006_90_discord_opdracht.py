@@ -50,8 +50,7 @@
 
 # print(bereken_kostprijs_pizza(35, 18))
 
-# # ********************************************************* Discord - Opdracht(6/7)
-# from cgi import print_arguments
+# ********************************************************* Discord - Opdracht(6/7)
 # import math
 # from utils.usefull_classes import Point
 # Punt_1 = Point(0,0)
@@ -74,7 +73,7 @@
 # InputPunt_2_y = float(input(f"Geef voor tweede punt, coördinaat y (float): "))
 # Punt_2.set_xy(InputPunt_2_x, InputPunt_2_y)
 
-# # print(Punt_1.posx)
+# print(Punt_1.posx)
 # print(bereken_helling(Punt_1, Punt_2))
 # print(bepaal_afstand_tussen(Punt_1, Punt_2))
 
