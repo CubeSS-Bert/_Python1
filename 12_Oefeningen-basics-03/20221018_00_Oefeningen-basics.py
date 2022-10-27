@@ -41,8 +41,27 @@
 # ************************************************ 03.05
 # ************************************************ 03.06
 # ************************************************ 03.07
+# lijst_personen_spaargeld = [("Jan", 1500), ("Ilse", 4500), ("Bart", 3), ("Tinne", 850), ("Joke", 1001)]
 
+# for persoon in lijst_personen_spaargeld:
+#     # print(persoon)
+#     if persoon[1] > 1000:
+#         print(f"{persoon[0]} heeft een budget van: {persoon[1]} €")
 
+# ************************************************ 03.08
+land = "start"
+oppervlakte = 0
+lijst_land_oppervlakte = []
 
+print("Geef land en bijhorende oppervlakte in km², typ 'stop' als land om ingave te beëindigen.")
+land = input("Land: ")
+oppervlakte = int(input("Oppervlakte: "))
+
+while land != 'stop':
+    lijst_land_oppervlakte.append((land, oppervlakte))
+    land = input("Land: ")
+    oppervlakte = int(input("Oppervlakte: "))
+    
+print(lijst_land_oppervlakte)
 
 
