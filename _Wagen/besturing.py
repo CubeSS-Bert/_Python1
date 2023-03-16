@@ -12,14 +12,14 @@ class Besturing:
     
     def gas_geven(self, gaspedaal):
         if gaspedaal != self.gaspedaal:
+            self.gaspedaal = gaspedaal
             self.wagen.rij_vooruit()
-        self.gaspedaal = gaspedaal
         
     
     def versnelling_kiezen(self, versnelling):
         if versnelling != self.versnelling:
+            self.versnelling = versnelling
             self.wagen.rij_vooruit()
-        self.versnelling = versnelling
         
     
     
